@@ -1,0 +1,219 @@
+%-------------------------
+% Resume in Latex
+% Author : Clinton Lunn
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\huge \scshape Clinton Lunn} \\ \vspace{1pt}
+    \small 813-784-8758 $|$ \href{mailto:clinton@clintonlunn.com}{\underline{clinton@clintonlunn.com}} $|$ 
+    \href{https://linkedin.com/in/clintonlunn}{\underline{linkedin.com/in/clintonlunn}} $|$
+    \href{https://github.com/clintonlunn}{\underline{github.com/clintonlunn}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Florida State University}{Tallahassee, FL}
+      {Master of Science in Geographic Information Sciences}{December 2017}
+      
+    \resumeSubheading
+      {Florida State University}{Tallahassee, FL}
+      {Bachelor of Science in Environmental Studies}{December 2013}
+
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Availity}{Jacksonville, FL}
+      {Software Engineer II}{March 2022 - Present}
+    \resumeItemListStart
+        \resumeItem{Led the migration from legacy Angular 1.x UIs to modern React.js and TypeScript platforms, optimizing user interfaces and improving overall experience.}
+        \resumeItem{Designed and deployed responsive forms and filters for healthcare applications using Formik and Yup, streamlining user interactions and data validation processes.}
+        \resumeItem{Incorporated Cucumber automation alongside Jest and React Testing Library, enhancing application testing and reliability.}
+        \resumeItem{Routinely utilized tools including Selenium Webdriver, Postman, Splunk, and Testrail for comprehensive application monitoring, testing, and debugging.}
+        \resumeItem{Engaged in troubleshooting and logic modifications within existing Java code, demonstrating adaptability and problem-solving capabilities in unfamiliar domains.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Availity}{Jacksonville, FL}
+      {Software Engineer I}{August 2019 - February 2022}
+    \resumeItemListStart
+        \resumeItem{Participated in full-stack application development, enhancing features within an agile team environment.}
+        \resumeItem{Automated data transformation and restructuring within HL7 documents using Mirth Connect, streamlining healthcare data processes.}
+        \resumeItem{Aided in migrating parts of legacy Angular 1.x UIs to modern architectures, ensuring compatibility and performance.}
+        \resumeItem{Collaborated with the team in troubleshooting, refining, and optimizing healthcare application components.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {UrbanSDK}{Jacksonville, FL}
+      {GIS Consultant}{May 2022 - August 2023}
+      \resumeItemListStart
+        \resumeItem{Designed and executed transit-focused dashboards via ArcGIS Dashboards to support governmental initiatives.}
+        \resumeItem{Integrated multiple dashboards on a singular platform using ArcGIS Enterprise Sites for streamlined access.}
+        \resumeItem{Employed Tools: ArcGIS Online, ArcGIS Dashboards, ArcGIS Enterprise Sites.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GIS Researcher and Developer}{January 2018 -- December 2022}
+      {Florida Resources \& Environmental Analysis Center}{Tallahassee, FL}
+      \resumeItemListStart
+        \resumeItem{Maintained front-end web-mapping applications used by public and private entities across Florida.}
+        \resumeItem{Developed custom data-driven mapping applications with advanced query capabilities and intuitive UI.}
+        \resumeItem{Leveraged technologies and libraries including HTML, JavaScript, CSS, jQuery, SQL, Dojo, ArcGIS JavaScript API, ESRI Calcite, Leaflet, Bootstrap, and Git Version Control.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Web Development Consultant}{September 2021 -- December 2021}
+      {Skin PS Brands}{}
+      \resumeItemListStart
+        \resumeItem{Consulted with customer service to resolve issues with internal ticketing software.}
+        \resumeItem{Updated WordPress and Shopify websites per client requirements.}
+        \resumeItem{Utilized technologies like Shopify, WordPress, and Gorgias.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GIS Conflation Analyst (Temporary Contractor)}{April 2019 -- August 2019}
+      {CSX}{Jacksonville, FL}
+      \resumeItemListStart
+        \resumeItem{Enabled effective coordination of project updates and workflow improvements across departments.}
+        \resumeItem{Tested and validated railway data accuracy using internal GIS conflation tools.}
+        \resumeItem{Communicated with field employees to verify imprecise data using technologies like ArcMap 10.X and proprietary web mapping plugins.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Teaching Assistant}{January 2017 -- December 2017}
+      {Florida State University - Geography}{Tallahassee, FL}
+      \resumeItemListStart
+        \resumeItem{Guided and mentored students in an introductory GIS course.}
+        \resumeItem{Assisted students with data acquisition and map-building using QGIS.}
+        \resumeItem{Helped the lead instructor in evaluating assignments and inputting grades into the Blackboard student portal.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages and Technologies}{: HTML, JavaScript, CSS, jQuery, SQL, Dojo, ArcGIS JavaScript API, ESRI Calcite, Leaflet, Bootstrap, Git Version Control, QGIS, ArcMap 10.X, Shopify, WordPress, Gorgias}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
